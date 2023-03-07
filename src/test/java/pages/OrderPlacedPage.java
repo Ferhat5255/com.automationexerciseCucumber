@@ -11,4 +11,7 @@ public class OrderPlacedPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//a[@data-qa='continue-button']") public WebElement buttonContinue;
+
+    @FindBy(xpath = "//a[@href='/download_invoice/500']") public WebElement buttonDownloadInvoice;
+
 }

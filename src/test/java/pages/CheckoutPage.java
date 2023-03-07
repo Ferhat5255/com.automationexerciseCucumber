@@ -23,10 +23,9 @@ public class CheckoutPage {
 @FindBy(xpath = "//*[@data-product-id='1']") public WebElement buttonXDelete;
 @FindBy(xpath = "//*[@id='cart_info']") public WebElement textCartisEmpty;
 
+@FindBy(id = "cart_info_table") public WebElement textProductisDisplayed;
 
-
-
-
-
+@FindBy(id = "address_delivery") public WebElement textAddressDelivery;
+@FindBy(id = "address_invoice") public WebElement textAddressInvoice;
 
 }

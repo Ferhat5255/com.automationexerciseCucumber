@@ -10,6 +10,7 @@ import pages.AccountCreatedPage;
 import pages.LoginPage;
 import pages.SignupPage;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class T01_RegisterStepDefinitions {
     LoginPage loginPage = new LoginPage();
@@ -25,7 +26,7 @@ public class T01_RegisterStepDefinitions {
     @When("Verify that home page is visible successfully")
     public void verifyThatHomePageIsVisibleSuccessfully() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Automation"));
-        Driver.wait(2);
+        Driver.wait(1);
     }
 
     @And("Click on Signup_Login button")
@@ -45,8 +46,8 @@ public class T01_RegisterStepDefinitions {
 
     @And("Enter email address {string}")
     public void enterEmailAddress(String arg0) {
-       loginPage.boxEmail.sendKeys(arg0);
-       // loginPage.boxEmail.sendKeys(faker.internet().emailAddress());
+     //  loginPage.boxEmail.sendKeys(arg0);
+       loginPage.boxEmail.sendKeys(faker.internet().emailAddress());
     }
 
     @And("Click Signup button")
@@ -175,12 +176,12 @@ public class T01_RegisterStepDefinitions {
     }
     @When("Click Delete Account button")
     public void clickDeleteAccountButton() {
-       // loginPage.buttonDeleteAccount.click();
+       loginPage.buttonDeleteAccount.click();
     }
 
     @Then("Verify that ACCOUNT DELETED! is visible and click Continue button")
     public void verifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton() {
-      //  Assert.assertTrue(accountCreatedPage.textAccountDeleted.isDisplayed());
+       Assert.assertTrue(accountCreatedPage.textAccountDeleted.isDisplayed());
     }
 
 

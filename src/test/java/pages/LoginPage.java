@@ -78,5 +78,19 @@ public class LoginPage {
     @FindBy(xpath = "//h2[.='Category']") public WebElement textLoginCategory;
     @FindBy(xpath = "//a[@href='#Women']") public WebElement buttonLoginWomen;
     @FindBy(xpath = "//a[@href='/category_products/1']") public WebElement buttonLoginWomenDress;
+    @FindBy(xpath = "//h2[contains(text(),'recommended items')]") public WebElement textRecommendedItems;
+    @FindBy(xpath = "(//a[@data-product-id='5'])[3]") public WebElement buttonAdtoCartRecommendedItems;
+    @FindBy(xpath = "(//a[@href='/view_cart'])[2]") public WebElement buttonRecommennedViewCartLogin;
 
+    @FindBy(id="scrollUp") public WebElement buttonScrollUp;
+    @FindBy(xpath = "(//h2[.='Full-Fledged practice website for Automation Engineers'])[2]" )
+    public WebElement textAutomationEngineers2;
+    @FindBy(xpath = "(//h2[.='Full-Fledged practice website for Automation Engineers'])[1]" )
+    public WebElement textAutomationEngineers1;
+
+    @FindBy(xpath = "(//h2[.='Full-Fledged practice website for Automation Engineers'])[3]" )
+    public WebElement textAutomationEngineers3;
+
+
+    @FindBy(xpath = "(//a[@data-slide='next'])[1]") public WebElement buttonSliderNext;
 }

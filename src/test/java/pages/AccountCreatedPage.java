@@ -12,7 +12,7 @@ public class AccountCreatedPage {
     @FindBy(xpath = "//*[text()='Account Created!']")
     public WebElement textAccountCreated;
 
-    @FindBy(xpath = "//a[.='Continue']")
+    @FindBy(xpath = "//a[@data-qa='continue-button']")
     public WebElement buttonContinue;
 
     @FindBy(xpath = "//*[.='Account Deleted!']")

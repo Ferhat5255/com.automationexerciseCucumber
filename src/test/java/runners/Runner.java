@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         monochrome=true, //raporlarin consolda okunakli sekilde cikmasi icin
         features = "./src/test/resources/features",  //features folder path
         glue = {"stepdefinitions","hooks"},//stepdefinitions path
-        tags = "@AddReviewOnProduct",
+        tags = "@ScrollDownfunctionality",
         dryRun = false
 )
 

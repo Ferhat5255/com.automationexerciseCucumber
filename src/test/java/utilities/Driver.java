@@ -344,4 +344,9 @@ public class Driver {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         String metin = js.executeScript("return document.getElementById('"+idOfElement+"').value").toString();
         System.out.println("Kutudaki deger : " + metin);
-}}
+}
+    public static void scrollIntoViewJS(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+}
